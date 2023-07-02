@@ -26,16 +26,18 @@ class Car:
 #acceleration method
     def accelerate(self):
         self.__speed += 5
-        print(f'Model Year: {self.get_year_model()}')
-        print(f'Car Make: {self.get_make()}')
-        print(f'Speed: {self.get_speed()} kp/h\n')
+        print(f'\33[31m*CAR ACCELERATING, BE CAREFUL!\33[31m*')
+        print(f'\33[35mModel Year: {self.get_year_model()}')
+        print(f'\33[35mCar Make: {self.get_make()}')
+        print(f'\33[35mSpeed: {self.get_speed()} kp/h\n')
 
 #braking system
     def brake (self):
         self.__speed -= 5
-        print(f'Model Year: {self.get_year_model()}')
-        print(f'Car Make: {self.get_make()}')
-        print(f'Speed: {self.get_speed()} kp/h\n')
+        print(f'\33[32m*SLOWING DOWN*\33[32m')
+        print(f'\33[33mModel Year: {self.get_year_model()}')
+        print(f'\33[33mCar Make: {self.get_make()}')
+        print(f'\33[33mSpeed: {self.get_speed()} kp/h\n')
 #return speed
     def get_speed(self):
         return self.__speed
