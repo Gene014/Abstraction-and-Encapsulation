@@ -1,3 +1,4 @@
+#Calma, Eugene Marie S.
 #Write a class named Pet, which should have the following data attributes:
 #• _ _name (for the name of a pet)
 #• _ _animal_type (for the type of animal that a pet is. Example values are ‘Dog’, ‘Cat’, and ‘Bird’)
@@ -15,3 +16,21 @@
 #This method returns the value of the _ _animal_type field.
 #• get_age()
 #This method returns the value of the _ _age field.
+
+class Pet:
+    def __init__(self,name,animal,age):
+        self.__name = name
+        self.__animal = animal
+        self.__age = age
+    def get_name(self):
+        return self.__name
+    def get_animal_type(self):
+        return self.__animal
+    def get_age(self):
+        return self.__age 
+    def set_name(self,name):
+        self.__name = name
+    def set_animal(self,animal_type):
+        self.__animal = animal_type
+    def set_age(self, age):
+        self.__age = age
