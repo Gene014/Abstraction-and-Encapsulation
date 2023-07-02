@@ -14,3 +14,7 @@ class TestFan:
         print("Fan Power", fan1.get_power())
         print("Fan Radius", fan1.get_radius())
         print("Fan Color", fan1.get_color())
+
+#try the program first
+test_fan = TestFan()
+test_fan.testrun()
