@@ -9,7 +9,7 @@ from fan_functions import Fan
 #fan1
 class TestFan:
     def testrun (self):
-        fan1 = Fan(Fan.SLOW, True, 10, "yellow")
+        fan1 = Fan(Fan.MAX, True, 10, "yellow")
         # Display each object’s speed, radius, color, and on properties.
         print("\33[33mFan Speed:", fan1.get_speed())
         print("\33[35mFan Power", fan1.get_power())
@@ -19,7 +19,7 @@ class TestFan:
 #fan2
         fan2= Fan(Fan.MEDIUM,False, 5, "blue")
         # Display each object’s speed, radius, color, and on properties.
-        print("\33[35mFan Speed:", fan2.get_speed())
+        print("\n\33[35mFan Speed:", fan2.get_speed())
         print("\33[33mFan Power", fan2.get_power())
         print("\33[35mFan Radius", fan2.get_radius())
         print("\33[33mFan Color", fan2.get_color())
